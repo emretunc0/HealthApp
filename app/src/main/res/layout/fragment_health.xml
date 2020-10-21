@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#57F4CCE3"
+    tools:context=".HealthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:rowCount="4"
+            android:columnCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dailies_card"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                android:onClick="onClick"
+                app:cardBackgroundColor="#F6E233"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Dailies"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="90sp"
+                    android:padding="1sp"
+                    android:src="@drawable/dailies_icon" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/heart_rate_card"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="30sp"
+                app:cardBackgroundColor="#DA0909"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_margin="10sp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart Rate"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="90sp"
+                    android:padding="1sp"
+                    android:src="@drawable/heartrate_icon" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/activities_card"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                android:onClick="onClick"
+                app:cardBackgroundColor="#15D3EC"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Activities"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="90sp"
+                    android:padding="1sp"
+                    android:src="@drawable/walker_icon" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sleep_card"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="10sp"
+                android:onClick="onClick"
+                app:cardBackgroundColor="#CCDFCC"
+                app:cardCornerRadius="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Sleep"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="90sp"
+                    android:padding="1sp"
+                    android:src="@drawable/sleep_icon" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
